@@ -21,9 +21,9 @@ The AI reads the word `Laban` incorrectly. This is an example from Gen 24 verse 
 <speak><prosody rate='80%' volume='loud'>And Rebekah had a brother, and his name was Laban: and Laban ran out unto the man, unto the well.</prosody></speak>
 ```
 
-Ensure `data.js` file contains the correct IPA pronunciation for `Laban`. If `data.js` does not contain the incorrectly pronounced word, find it's IPA pronunciation and add it to the object. 
+Ensure `data.js` file contains the correct IPA pronunciation for `Laban`. If `data.js` does not contain the incorrectly pronounced word, find it's IPA pronunciation and add it to `IPA_PRONUNCIATIONS` object. 
 
-Each key in the `IPA_PRONUNCIATIONS` object maps to the correct IPA pronunciation.
+Each key in `IPA_PRONUNCIATIONS` corresponds to a wrongly prononunced word and it's value represents the correct IPA pronunciation.
 
 
 ```javascript
@@ -35,7 +35,7 @@ const IPA_PRONUNCIATIONS = {
 }
 ```
 
-The output XML file looks something like this after running the command
+The output XML file looks like this after running the script.
 
 ```XML
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -44,4 +44,4 @@ The output XML file looks something like this after running the command
 </speak>
 ```
 
-> __Note__: **ADD** the correct IPA pronunciation to `data.js` and commit it back to this repository !
+> __Note__: **ADD** the correct IPA pronunciation to `data.js` and commit it back to this repository so that others can also get the updated IPA pronunciations !
