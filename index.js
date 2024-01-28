@@ -25,11 +25,25 @@ const combinePunctuationsAndWords = (wordsPunctPhoneme) => {
         }
     })
     return result.join(' ');
-} 
+}
 
-const correctPronunciationInXML = (xmlFilePath, outputFilePath) => {
-  // Read the XML file
-  const xmlData = fs.readFileSync(xmlFilePath, 'utf8');
+const traverseAndReplace = (obj) => {
+  for (const key in obj) {
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      traverseAndReplace(obj[key]);
+      // replace only on tag content
+    } else if (key === '_') {
+        obj[key] = combinePunctuationsAndWords(
+            tokenizer.tokenize(obj[key])
+                .map((wordOrPunct) => wordOrPunct in IPA_PRONUNCIATIONS ? phonmeTemplate(IPA_PRONUNCIATIONS[wordOrPunct], wordOrPunct) : wordOrPunct)
+        )
+    }
+  }
+}
+
+const main = () => {
+  const [xmlInputPath, xmlOutputPath] = process.argv.slice(2);
+  const xmlData = fs.readFileSync(path.resolve(xmlInputPath), 'utf8');
 
   // Parse the XML data
   xml2js.parseString(xmlData, (err, result) => {
@@ -42,37 +56,15 @@ const correctPronunciationInXML = (xmlFilePath, outputFilePath) => {
     traverseAndReplace(result);
 
     // Convert the modified XML back to a string
-    let modifiedXml = `<?xml version="1.0" encoding="UTF-8"?>\n${new xml2js.Builder().buildObject(result)}`;
+    let modifiedXml = new xml2js.Builder().buildObject(result);
 
     // Hack as all the < and > from the template gets converted to &lt and &gt
     modifiedXml = modifiedXml.replace(new RegExp('&lt;', 'g'), '<');
     modifiedXml = modifiedXml.replace(new RegExp('&gt;', 'g'), '>');
 
     // Save the modified XML to a new file
-    fs.writeFileSync(outputFilePath, modifiedXml, 'utf8');
+    fs.writeFileSync(path.resolve(xmlOutputPath), modifiedXml, 'utf8');
   });
-}
-
-const traverseAndReplace = (obj) => {
-  for (const key in obj) {
-    if (typeof obj[key] === 'object' && obj[key] !== null) {
-      traverseAndReplace(obj[key]);
-      // replace only on tag content
-    } else if (key === '_') {
-        console.log(tokenizer.tokenize(obj[key]).map((wordOrPunct) => wordOrPunct in IPA_PRONUNCIATIONS ? phonmeTemplate(IPA_PRONUNCIATIONS[wordOrPunct], wordOrPunct) : wordOrPunct));
-        obj[key] = combinePunctuationsAndWords(
-            tokenizer.tokenize(obj[key])
-                .map((wordOrPunct) => wordOrPunct in IPA_PRONUNCIATIONS ? phonmeTemplate(IPA_PRONUNCIATIONS[wordOrPunct], wordOrPunct) : wordOrPunct)
-        )
-    }
-  }
-}
-
-const main = () => {
-  const arguments = process.argv.slice(2);
-  const xmlInputPath = arguments[0];
-  const xmlOutputPath = arguments[1];
-  correctPronunciationInXML(path.resolve(xmlInputPath), path.resolve(xmlOutputPath));
 }
 
 main();

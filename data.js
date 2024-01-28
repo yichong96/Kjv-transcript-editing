@@ -4,6 +4,7 @@
 const IPA_PRONUNCIATIONS = {
     clave: "klɛ́jv",
     herb: "hɜːrb",
+    Laban: "laˈban",
 }
 
 module.exports = {
