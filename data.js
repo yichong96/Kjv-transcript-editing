@@ -24,6 +24,7 @@ const IPA_PRONUNCIATIONS = {
     Phichol: "ˈfaɪˌkɔl",
     Beeri: "biːˈraɪ",
     Bashemath: "baʃemɑθ",
+    badest: "ˈbeɪdɪst"
 }
 
 module.exports = {

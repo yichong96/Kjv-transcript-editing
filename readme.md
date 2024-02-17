@@ -50,5 +50,6 @@ The output XML content will look like this after running the script.
 </speak>
 ```
 
+> __Note__: The script cannot be run on a transcript multiple times. The script currently cannot handle update of pronounciations. The transcript file will be corrupted if run multiple times.
 
 > __Note__: **ADD** the correct IPA pronunciation to `data.js` and commit it back to this repository so that others can also get the updated IPA pronunciations !
