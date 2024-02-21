@@ -28,11 +28,15 @@ const combinePunctuationsAndWords = (wordsPunctPhoneme) => {
 }
 
 const traverseAndReplace = (obj) => {
+  console.log(JSON.stringify(obj, null, 2))
   for (const key in obj) {
     if (typeof obj[key] === 'object' && obj[key] !== null) {
       traverseAndReplace(obj[key]);
       // replace only on tag content
     } else if (key === '_') {
+        console.log("key: " + key);
+        console.log(obj[key])
+        console.log(tokenizer.tokenize(obj[key]))
         obj[key] = combinePunctuationsAndWords(
             tokenizer.tokenize(obj[key])
                 .map((wordOrPunct) => wordOrPunct in IPA_PRONUNCIATIONS ? phonmeTemplate(IPA_PRONUNCIATIONS[wordOrPunct], wordOrPunct) : wordOrPunct)

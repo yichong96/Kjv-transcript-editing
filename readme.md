@@ -17,15 +17,13 @@ Ensure `data.js` contains the correct ipa pronunciation mapping for each wrongly
 ./main.sh <Book> <Chapter> <Verse>
 ```
 
-The script automatically downloads the `.xml` file of the verse for the chapter and book specified from the server. After it runs the correction tool, it will upload the `.xml` file back to the server.
+The script generates an `.xml` file of the verse for the chapter and book specified from the server. After it runs the correction tool, it will upload the `.xml` file to the server.
 
 #### Example
-The AI reads the word `Laban` incorrectly. This is an example from Gen 24 verse 29.
+Suppose that the AI reads the word `Laban` incorrectly from Gen 24 verse 29. 
 
-Example xml file content of Gen 24 verse 29.
-```XML
-<speak><prosody rate='80%' volume='loud'>And Rebekah had a brother, and his name was Laban: and Laban ran out unto the man, unto the well.</prosody></speak>
-```
+_Gen 24: 29 - And Rebekah had a brother, and his name was Laban: and Laban ran out unto the man, unto the well._
+
 
 Ensure `data.js` file contains the correct IPA pronunciation for `Laban`. If `data.js` does not contain the incorrectly pronounced word, find it's IPA pronunciation and add it to `IPA_PRONUNCIATIONS` object. 
 
@@ -49,7 +47,5 @@ The output XML content will look like this after running the script.
   <prosody rate="80%" volume="loud">And Rebekah had a brother, and his name was <phoneme alphabet='ipa' ph="laˈban">Laban</phoneme>: and <phoneme alphabet='ipa' ph="laˈban">Laban</phoneme> ran out unto the man, unto the well.</prosody>
 </speak>
 ```
-
-> __Note__: The script cannot be run on a transcript multiple times. The script currently cannot handle update of pronounciations. The transcript file will be corrupted if run multiple times.
 
 > __Note__: **ADD** the correct IPA pronunciation to `data.js` and commit it back to this repository so that others can also get the updated IPA pronunciations !

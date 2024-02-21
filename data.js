@@ -11,7 +11,7 @@ const IPA_PRONUNCIATIONS = {
     Sheba: "ʃeɪˈbɑ",
     Leummim: "leɪˈuːmɪm",
     Hanoch: "χaˈnɔx",
-    Mamre: "mæmˈre",
+    Mamre: "ˈmʌmri]",
     Lahairoi: "leɪˌhaɪˈrɔɪ",
     Jetur: "dʒərtʊr",
     Naphish: "neɪfɪʃ",
@@ -24,7 +24,16 @@ const IPA_PRONUNCIATIONS = {
     Phichol: "ˈfaɪˌkɔl",
     Beeri: "biːˈraɪ",
     Bashemath: "baʃemɑθ",
-    badest: "ˈbeɪdɪst"
+    badest: "ˈbeɪdɪst",
+    Hazezontamar: "hazɛzɔntaˈmaʁ",
+    Shaveh: "ʃɛɪˈva",
+    Aner: "ɑˈnɛʁ",
+    Eliezer: "ɛliˈʕɛzɛr",
+    Ur: "ʔur",
+    Kenizzites: "kɛnɪˈzaɪts",
+    Rephaims: "ˈrɛfəˌɪmz",
+    Beerlahairoi: "bɛər lɑːˈhaɪ.rɔɪ",
+    Ammon: "ˈæhmən",
 }
 
 module.exports = {
