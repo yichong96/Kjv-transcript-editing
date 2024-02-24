@@ -76,7 +76,15 @@ const IPA_PRONUNCIATIONS = {
     Isui: "ˈiːsuːi",
     Beriah: "bɛˈraɪə",
     Serah: "ˈsɛrə",
-    straitly: "ˈstreɪtli"
+    straitly: "ˈstreɪtli",
+    Belah: "bɛˈlɑː",
+    Becher: "biːxkər",
+    Gera: "ˈɡɛrə",
+    Naaman: "ˈneːɑːmɑ:n",
+    Ehi: "iːhaɪ",
+    Rosh: "rəʊʃ",
+    Muppim: "ˈmupɪm",
+    Huppim: "ˈhupɪm"
 }
 
 module.exports = {
