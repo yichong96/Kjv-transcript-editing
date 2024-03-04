@@ -5,7 +5,7 @@ async function getBibleTextXML(bookName, chapter, verse) {
         const response = await axios.get(`https://bible-api.com/${bookName}+${chapter}:${verse}?translation=kjv`);
         const { text } = response.data;
 
-        const verseText = text.trim();
+        const verseText = text.replace(/\n/g, ' ').trim();
         
         const xmlText = `<speak><prosody rate='80%' volume='loud'>${verseText}</prosody></speak>`;
         
