@@ -129,7 +129,10 @@ const IPA_PRONUNCIATIONS = {
     Zabulon: "ˈzæbjʊlən",
     Blessed: "ˈblɛstɪd",
     Raca: "ˈrɑːkə",
-
+    Gergesenes: "gɜːgɜˈsiːnz",
+    eaten: "ˈiː.tən",
+    eunuchs: "ˈjuː.nəks",
+    "mother's": "ˈmʌðərz"
 }
 
 module.exports = {
