@@ -13,10 +13,10 @@ verse=$3
 transcript_dir="/coder/cpbpc-tts-script-us-east-1/kjv/"
 
 echo "downloading bible text for $book chapter $chapter verse $verse"
-node outputBibleTextXML.js "$book" "$chapter" "$verse" > $verse.xml
+node download.js "$transcript_dir/$book/$chapter/$verse.xml" "$verse.xml"
 
 echo "replacing wrongly read ipa pronunciations"
-node convert.js "$verse.xml" "$verse.xml"
+node convert_v2.js "$verse.xml" "$verse.xml"
 
 echo "Uploading edited transcript to server"
 node upload.js "$verse.xml" "$transcript_dir/$book/$chapter/$verse.xml"

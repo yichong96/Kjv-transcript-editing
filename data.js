@@ -132,7 +132,8 @@ const IPA_PRONUNCIATIONS = {
     Gergesenes: "gɜːgɜˈsiːnz",
     eaten: "ˈiː.tən",
     eunuchs: "ˈjuː.nəks",
-    "mother's": "ˈmʌðərz"
+    "mother's": "ˈmʌðərz",
+    sow: "saʊ",
 }
 
 module.exports = {

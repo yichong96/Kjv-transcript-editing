@@ -45,12 +45,19 @@ const main = () => {
   const [xmlInputPath, xmlOutputPath] = process.argv.slice(2);
   const xmlData = fs.readFileSync(path.resolve(xmlInputPath), 'utf8');
 
+  const parser = new xml2js.Parser({
+    // ignoreAttrs: true,
+    preserveChildrenOrder: true
+  });
+
   // Parse the XML data
-  xml2js.parseString(xmlData, (err, result) => {
+  parser.parseString(xmlData, (err, result) => {
     if (err) {
       console.error('Error parsing XML:', err);
       return;
     }
+    console.log(tokenizer.tokenize(xmlData));
+
 
     // Traverse the parsed XML and replace the specified word
     traverseAndReplace(result);
