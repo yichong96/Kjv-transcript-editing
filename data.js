@@ -134,6 +134,19 @@ const IPA_PRONUNCIATIONS = {
     eunuchs: "ˈjuː.nəks",
     "mother's": "ˈmʌðərz",
     sow: "saʊ",
+    Bethphage: "ˈbɛθfeɪdʒ",
+    cummin: "ˈkjuːmɪn",
+    Barachias: "bɛrəkaɪəs",
+    Noe: "noə",
+    cursed: "ˈkɜːsɪd",
+    bewrayeth: "bɪˈreɪəθ",
+    Cyrene: "saɪˈriːni",
+    sabachthani: "səˈbakθənaɪ",
+    Joses: "ˈdʒoʊsɛs",
+    alway: "ˈɔːlweɪ",
+    falleth: "ˈfɔːləθ",
+    Jochebed: "ˈdʒɑːkəbɛd",
+    Yet: "jɛt",
 }
 
 module.exports = {
