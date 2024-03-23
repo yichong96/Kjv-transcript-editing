@@ -147,6 +147,19 @@ const IPA_PRONUNCIATIONS = {
     falleth: "ˈfɔːləθ",
     Jochebed: "ˈdʒɑːkəbɛd",
     Yet: "jɛt",
+    Bethsaida: "bɛɪθˈsaɪda",
+    Nineveh: "nɪˈnɪvɪ",
+    Joses: "ˈdʒoʊsiz",
+    lead: "lɛd",
+    Moab: "ˈmoʊæb",
+    Hur: "huːr",
+    bow: "baʊ",
+    aul: "ɔl",
+    wound: "wuːnd",
+    sacrificeth: "ˈsæk.rə.faɪs.ɪθ",
+    sow: "soʊ",
+    Abib: "aˈbib",
+    heave: "hiːv"
 }
 
 module.exports = {

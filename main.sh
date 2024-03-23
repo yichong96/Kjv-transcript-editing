@@ -10,7 +10,7 @@ book=$1
 chapter=$2
 verse=$3
 
-transcript_dir="/coder/cpbpc-tts-script-us-east-1/kjv/"
+transcript_dir="/coder/cpbpc-tts-script/kjv"
 
 echo "downloading bible text for $book chapter $chapter verse $verse"
 node download.js "$transcript_dir/$book/$chapter/$verse.xml" "$verse.xml"

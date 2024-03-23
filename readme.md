@@ -49,3 +49,7 @@ The output XML content will look like this after running the script.
 ```
 
 > __Note__: **ADD** the correct IPA pronunciation to `data.js` and commit it back to this repository so that others can also get the updated IPA pronunciations !
+
+### Backlog
+- Update CPBPC sql table with correct pronunciations.
+- Currently does not handle fixing of words with aprostrophes in it. E.g mother's
