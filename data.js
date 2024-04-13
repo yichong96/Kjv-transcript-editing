@@ -159,7 +159,15 @@ const IPA_PRONUNCIATIONS = {
     sacrificeth: "ˈsæk.rə.faɪs.ɪθ",
     sow: "soʊ",
     Abib: "aˈbib",
-    heave: "hiːv"
+    heave: "hiːv",
+    defileth: "dɪˈfaɪlɪθ",
+    ass: "æs",
+    seethe: "sið",
+    ephod: "ˈiː.fɒd",
+    taches: "ˈtæʃɪz",
+    brasen: "ˈbreɪzən",
+    Ahisamach: "əhɪsəmax",
+    four: "fɔɹ",
 }
 
 module.exports = {
