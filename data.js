@@ -54,7 +54,7 @@ const IPA_PRONUNCIATIONS = {
     Jemuel: "dʒɛmjuːɛl",
     Jamin: "dʒamɪn",
     Jachin: "ˈdʒahɪn",
-    Shaul: "ʃeɪɔːl",
+    Shaul: "ʃeɪʊl",
     Gershon: "ˈɡɜrʃen",
     Onan: "ˈoʊnən",
     Shelah: "ˈʃiːlə",
@@ -159,7 +159,13 @@ const IPA_PRONUNCIATIONS = {
     sacrificeth: "ˈsæk.rə.faɪs.ɪθ",
     sow: "soʊ",
     Abib: "aˈbib",
-    heave: "hiːv"
+    heave: "hiːv",
+    defileth: "dɪˈfaɪlɪθ",
+    jubile: "ˈdʒuːbɪliː",
+    man: "mæn",
+    yea: "jeɪ",
+    begat: "bɪˈɡɛt",
+    pursueth: "pərˈsuːɜrθ",
 }
 
 module.exports = {
