@@ -166,6 +166,13 @@ const IPA_PRONUNCIATIONS = {
     yea: "jeɪ",
     begat: "bɪˈɡɛt",
     pursueth: "pərˈsuːɜrθ",
+    ass: "æs",
+    seethe: "sið",
+    ephod: "ˈiː.fɒd",
+    taches: "ˈtæʃɪz",
+    brasen: "ˈbreɪzən",
+    Ahisamach: "əhɪsəmax",
+    four: "fɔɹ",
 }
 
 module.exports = {
