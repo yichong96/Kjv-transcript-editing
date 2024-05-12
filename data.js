@@ -173,6 +173,19 @@ const IPA_PRONUNCIATIONS = {
     brasen: "ˈbreɪzən",
     Ahisamach: "əhɪsəmax",
     four: "fɔɹ",
+    Issachar: "iˈsəkə",
+    "Lord's": "lɔrdz",
+    Eldad: "ɛlˈdəd",
+    Jephunneh: "dʒɛfuːne",
+    rebel: "rɪˈbɛl",
+    bade: "beɪd",
+    slander: "ˈslɛndər",
+    sojourn: "ˈsəʊdʒɜːn",
+    sojourneth: "ˈsəʊdʒɜːnɛθ",
+    goats: "ɡoʊts",
+    ribband: "ˈrɪbənd",
+    seemeth: "ˈsiːmɛf",
+    Abiram: "ˈabaɪram"
 }
 
 module.exports = {
