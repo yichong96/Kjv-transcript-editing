@@ -91,7 +91,7 @@ const IPA_PRONUNCIATIONS = {
     moreover: "mɔːrˈoʊvər",
     Padan:"pəːdan",
     Ephrath: "ˈiːvːfræθ",
-    shewed: "ʃuːd",
+    Shewed: "ʃoʊd",
     blessed: "blɛst",
     Ephron: "ivfrɑːn",
     Atad: "ˈɑːtɑːd",
@@ -266,7 +266,7 @@ const IPA_PRONUNCIATIONS = {
     Halak: "ˈhalʌk",
     Edrei: "ˈɛdreɪ",
     Baalgad: "bɑːˈɑːlˈɡɑd",
-    Seir: "saɪər",
+    Seir: "sɪər",
     Bethel: "bɛθəl",
     Tappuah: "ˈtɑ:puə",
     Tannach: "ˈtɑːanak",
@@ -284,6 +284,16 @@ const IPA_PRONUNCIATIONS = {
     Beor: "biːɔːr",
     Mahanaim: "ˈmahənaɪɪm",
     espy: "ˈɛspaɪ",
+    Chinnereth: "kɪnəˈrɛθ",
+    Ahihud: "əˈhaɪˌhʊd",
+    Tophel: "ˈtoʊ.fɛl",
+    Elath: "ˈiː.læθ",
+    Zered: "ˈzɛˌrɛd",
+    Kedemoth: "ˈkeɪdəˌmɑθ",
+    "Baal-peor": "ˈbaal ˈpiːɔr",
+    Seest: "ˈsiɪst",
+    "Beth-peor": "ˈbɛθ ˈpeːɔr",
+
 }
 
 module.exports = {
