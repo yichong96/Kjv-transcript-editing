@@ -290,11 +290,22 @@ const IPA_PRONUNCIATIONS = {
     Elath: "ˈiː.læθ",
     Zered: "ˈzɛˌrɛd",
     Kedemoth: "ˈkeɪdəˌmɑθ",
-    "Baal-peor": "ˈbaal ˈpiːɔr",
-    Seest: "ˈsiɪst",
-    "Beth-peor": "ˈbɛθ ˈpeːɔr",
-
-}
+    "Baalpeor": "ˈbaal ˈpiːɔr",
+    seest: "ˈsiɪst",
+    "Bethpeor": "ˈbɛθ ˈpeːɔr",
+    hast: "hæst",
+    thou: "ðaʊ",
+    champaign: "ʃæmˈpeɪn",
+    Moreh: "moˈreɪ",
+    proveth: "ˈpruːvɪθ",
+    divideth: "dɪˈvaɪdɪθ",
+    flieth: "ˈflaɪɪθ",
+    puttest: "ˈpʊtɪst",
+    evilfavouredness: "ˌiːvəlˈfeɪvərdnəs",
+    inasmuch: "ˌɪnəzˈmʌtʃ",
+    Balaam: "ˈbeɪləm",
+    livest: "ˈlɪvɪst"
+}   
 
 module.exports = {
     IPA_PRONUNCIATIONS
