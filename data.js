@@ -304,7 +304,23 @@ const IPA_PRONUNCIATIONS = {
     evilfavouredness: "ˌiːvəlˈfeɪvərdnəs",
     inasmuch: "ˌɪnəzˈmʌtʃ",
     Balaam: "ˈbeɪləm",
-    livest: "ˈlɪvɪst"
+    livest: "ˈlɪvɪst",
+    Hushai: "ˈhuːʃaɪ",
+    Beersheba: "bɪərˈʃiːbə",
+    Abiathar: "əˈbɪəθɑːr",
+    Ahimaaz: "əˈhɪməæz",
+    Enrogel: "ɛnˈroʊɡəl",
+    wench: "wɛntʃ",
+    Bahurim: "ˈbahuːɹɪm",
+    Amasa: "aˈmasa",
+    Ithran: "ɪθran",
+    Zeruiah: "zəˈruːaɪə",
+    shobi: "ˈʃoʊbaɪ",
+    Ammiel: "ˈamiˌɛl",
+    Rogelim: "ˈroʊɡəlɪm",
+    Cushi: "ˈkuːʃaɪ",
+    
+
 }   
 
 module.exports = {
