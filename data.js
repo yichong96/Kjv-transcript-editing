@@ -349,6 +349,7 @@ const IPA_PRONUNCIATIONS = {
     Ophir: "ˈoʊfɪər",
     thee: "ðiː",
     Tharshish: "ˈθɑːrʃɪʃ",
+    sentest: "sɛnˌtɛst",
 }   
 
 module.exports = {
