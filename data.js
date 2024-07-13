@@ -304,8 +304,19 @@ const IPA_PRONUNCIATIONS = {
     evilfavouredness: "ˌiːvəlˈfeɪvərdnəs",
     inasmuch: "ˌɪnəzˈmʌtʃ",
     Balaam: "ˈbeɪləm",
-    livest: "ˈlɪvɪst"
-}   
+    livest: "ˈlɪvɪst",
+    Ahaziah: "ˌeɪhəˈzaɪə",
+    Jehoram: "dʒɪˈhɔːrəm",
+    Jehoshaphat: "dʒərˈhoʊʃəˌfæt",
+    Elisha: "ɪˈlaɪʃə",
+    Mesha: "ˈmeɪʃeɪ",
+    Kirharaseth: "kɪrˈhɑːrəsɛθ",
+    Gehazi: "ɡərˈheɪzaɪ",
+    gourds: "ɡɔrdz",
+    Dothan: "ˈdoʊθən",
+    Naaman: "ˈneɪmən",
+    "Naaman's": "ˈneɪmənz"
+}
 
 module.exports = {
     IPA_PRONUNCIATIONS
