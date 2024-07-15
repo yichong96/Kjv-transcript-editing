@@ -315,7 +315,7 @@ const IPA_PRONUNCIATIONS = {
     Amasa: "aˈmasa",
     Ithran: "ɪθran",
     Zeruiah: "zəˈruːaɪə",
-    shobi: "ˈʃoʊbaɪ",
+    Shobi: "ˈʃoʊbaɪ",
     Ammiel: "ˈamiˌɛl",
     Rogelim: "ˈroʊɡəlɪm",
     Cushi: "ˈkuːʃaɪ",
