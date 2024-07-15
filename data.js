@@ -150,7 +150,6 @@ const IPA_PRONUNCIATIONS = {
     Bethsaida: "bɛɪθˈsaɪda",
     Nineveh: "nɪˈnɪvɪ",
     Joses: "ˈdʒoʊsiz",
-    lead: "lɛd",
     Moab: "ˈmoʊæb",
     Hur: "huːr",
     bow: "baʊ",
