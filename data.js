@@ -327,7 +327,7 @@ const IPA_PRONUNCIATIONS = {
     Belial: "bɪˈlaɪəl",
     Bichri: "ˈbɪkraɪ",
     Berites: "ˈbɛraɪts",
-    Benaiah: "bənəˈaɪə",
+    Benaiah: "bɛˈna.ˈaɪə",
     Adoram: "aˈdɔːrəm",
     Gibeonites: "ˈɡɪbiəˌnaɪts",
     Aiah: "eɪaɪə",
@@ -340,7 +340,6 @@ const IPA_PRONUNCIATIONS = {
     hew: "hjuː",
     cast: "kɑːst",
     Jachin: "ˈdʒɑkɪn",
-    // "fir trees": "",
     Baalath: "ˈbaalæθ",
     Perizzites: "ˈpɛrɪˌzaɪts",
     Eziongeber: "əːzɪɒnˌɡəbər",
@@ -352,8 +351,11 @@ const IPA_PRONUNCIATIONS = {
     Adonijah: "ˌədɔˈnɪdʒɜ",
     comest: "ˈkʌməst",
     passest: "ˈpæsəst",
-}   
-
+    eveningtide: "ˈiːvnɪŋˌtaɪd",
+    livest: "ˈlɪvəst",
+    tarry: "ˈtæri",
+   abideth: "əˈbaɪdɪθ",
+}
 module.exports = {
     IPA_PRONUNCIATIONS
 }
