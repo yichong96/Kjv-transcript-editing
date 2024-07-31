@@ -33,7 +33,7 @@ Object.entries(theirDB).forEach(([key, value]) => {
 
 // Function to save object to a .js file
 const saveDBToJSFile = (obj, outputFilePath) => {
-    const objectString = `const IPA_PRONUNCIATIONS = ${JSON.stringify(obj, null, 2)};\nmodule.exports = IPA_PRONUNCIATIONS;\n`;
+    const objectString = `const IPA_PRONUNCIATIONS = ${JSON.stringify(obj, null, 2)};\nmodule.exports = { IPA_PRONUNCIATIONS };\n`;
     fs.writeFileSync(outputFilePath, objectString, 'utf8');
   };
 
