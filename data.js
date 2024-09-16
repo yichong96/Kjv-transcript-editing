@@ -339,6 +339,22 @@ const IPA_PRONUNCIATIONS = {
   "passest": "ˈpæsəst",
   "eveningtide": "ˈiːvnɪŋˌtaɪd",
   "tarry": "ˈtæri",
-  "abideth": "əˈbaɪdɪθ"
+  "abideth": "əˈbaɪdɪθ",
+  "hateth": "heɪtɪθ",
+  "Judaea": "dʒuːˈdiːə",
+  "baptizeth": "bæpˈtaɪzɪθ",
+  "Sychar": "ˈsaɪkɑr",
+  "Go": "ɡoʊ",
+  "Messias": "mɛˈsaɪəs",
+  "Come": "kʌm",
+  "eat": "iːt",
+  "soweth": "ˈsoʊɪθ",
+  "reapeth": "ˈriːpɪθ",
+  "raiseth": "ˈreɪzɪθ",
+  "Iscariot": "ɪsˈkærɪət",
+  "thither": "ˈðɪðər",
+  "bearest": "ˈbɛərɪst",
+  "convinceth": "kənˈvɪnsɪθ",
+  "will": "wɪl"
 };
 module.exports = { IPA_PRONUNCIATIONS };
