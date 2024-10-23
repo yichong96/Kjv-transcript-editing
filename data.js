@@ -147,7 +147,7 @@ const IPA_PRONUNCIATIONS = {
   "Hur": "həːr",
   "bow": "boʊ",
   "aul": "ɔl",
-  "wound": "wu:nd",
+  "wound": "waʊnd",
   "sacrificeth": "ˈsæk.rə.faɪs.ɪθ",
   "Abib": "aˈbib",
   "heave": "hiːv",
@@ -382,6 +382,10 @@ const IPA_PRONUNCIATIONS = {
   "thither": "ˈðɪðər",
   "bearest": "ˈbɛərɪst",
   "convinceth": "kənˈvɪnsɪθ",
-  "will": "wɪl"
+  "will": "wɪl",
+  "slandereth": "ˈslæn.də.rɪθ",
+  "crowneth": "ˈkraʊ.nɪθ",
+  "satisfieth": "ˈsætɪsˌfaɪɪθ",
+  "executeth": "ˈɛksɪˌkjuːtɪθ"
 };
 module.exports = { IPA_PRONUNCIATIONS };
