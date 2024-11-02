@@ -1,4 +1,4 @@
-const { IPA_PRONUNCIATIONS } = require('./data');
+const IPA_PRONUNCIATIONS = require('./output.json');
 const fs = require('fs');
 const path = require('path');
 
