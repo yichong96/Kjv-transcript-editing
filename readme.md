@@ -10,7 +10,7 @@ Tired of manually editing IPA pronunciations for each word that appears multiple
 Run `npm install` to install dependencies.
 
 ## Usage
-Ensure `data.js` contains the correct ipa pronunciation mapping for each wrongly pronounced word in the verse.
+Download KJV pronounciation fix google sheet and save as `.csv` file. The file should automatically be downloaded with the name `KJV Bible Reading Plan - Pronunciation Fix.csv`.
 
 
 ```bash

@@ -1,6 +1,7 @@
-const IPA_PRONUNCIATIONS = require('./output.json');
+const { IPA_PRONUNCIATIONS } = require('./csv_to_json');
 const fs = require('fs');
 const path = require('path');
+
 
 // Define a function to replace words with their IPA pronunciation
 function replaceWordsWithIPA(text) {
@@ -29,7 +30,7 @@ var prosodyRegex = /(<prosody[^>]*>)(.*?)(<\/prosody>)/s;
 const main = () => {
     const [xmlInputPath, xmlOutputPath] = process.argv.slice(2);
     const xmlData = fs.readFileSync(path.resolve(xmlInputPath), 'utf8');
-
+    
     // Replace occurrences within the <prosody> tag
     var updatedXmlString = xmlData.replace(prosodyRegex, function(match, startTag, content, endTag) {
         // Replace words with their IPA pronunciations

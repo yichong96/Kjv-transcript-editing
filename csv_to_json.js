@@ -1,28 +1,23 @@
 const fs = require('fs');
-const csv = require('csv-parser');
+å
+const path = require('path');
 
-// Define the output JSON object
-const result = {};
+// Function to parse the CSV file into a JSON object
+function parseCSVtoJSON(filePath) {
+    const data = fs.readFileSync(filePath, 'utf8');
+    const lines = data.trim().split('\n');
+    const jsonObject = {};
 
-// Read and parse the CSV file without headers
-fs.createReadStream('data.csv') // Replace with your CSV file path
-  .pipe(csv({ headers: ['word', 'IPA'], skipLines: 0 })) // Specify headers manually
-  .on('data', (row) => {
-    // Use the specified headers 'key' and 'value'
-    const key = row['word'];
-    const value = row['IPA'];
-    result[key] = value;  // Add key-value pair to the result object
-  })
-  .on('end', () => {
-    // Write the JSON object to a file
-    fs.writeFile('output.json', JSON.stringify(result, null, 2), (err) => {
-      if (err) {
-        console.error('Error writing JSON file:', err);
-      } else {
-        console.log('JSON file has been saved as output.json');
-      }
+    lines.forEach(line => {
+        const [key, value] = line.split(',');
+        jsonObject[key.trim()] = value.trim();
     });
-  })
-  .on('error', (err) => {
-    console.error('Error reading CSV file:', err);
-  });
+
+    return jsonObject;
+}
+
+// Usage
+const filePath = path.join(__dirname, 'KJV Bible Reading Plan - Pronunciation Fix.csv');
+const IPA_PRONUNCIATIONS = parseCSVtoJSON(filePath);
+
+module.exports = { IPA_PRONUNCIATIONS }
