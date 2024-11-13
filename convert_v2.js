@@ -51,7 +51,6 @@ const main = async () => {
         // Replace words with their IPA pronunciations
         return startTag + replaceWordsWithIPA(content, IPA_PRONUNCIATIONS) + endTag;
     });
-    console.log(updatedXmlString);
 
     fs.writeFileSync(path.resolve(xmlOutputPath), updatedXmlString, 'utf8');
 }
