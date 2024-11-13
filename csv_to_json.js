@@ -1,18 +1,15 @@
 const fs = require('fs');
-
+const csv = require('fast-csv');
 const path = require('path');
 
 // Function to parse the CSV file into a JSON object
 function parseCSVtoJSON(filePath) {
-    const data = fs.readFileSync(filePath, 'utf8');
-    const lines = data.trim().split('\n');
     const jsonObject = {};
-
-    lines.forEach(line => {
-        const [key, value] = line.split(',');
-        jsonObject[key.trim()] = value.trim();
-    });
-
+    fs.createReadStream(path.resolve(filePath))
+        .pipe(csv.parse({ ignoreEmpty: true }))
+        .on('error', (error) => console.error(error))
+        .on('data', (row) => jsonObject[row[0].trim()] = row[1].trim())
+        .on('end', (rowCount) => console.log(`Parsed ${rowCount} rows`));
     return jsonObject;
 }
 

@@ -30,7 +30,10 @@ var prosodyRegex = /(<prosody[^>]*>)(.*?)(<\/prosody>)/s;
 const main = () => {
     const [xmlInputPath, xmlOutputPath] = process.argv.slice(2);
     const xmlData = fs.readFileSync(path.resolve(xmlInputPath), 'utf8');
-    
+
+    // backup original file from server
+    fs.writeFileSync(path.resolve(xmlInputPath.split('.')[0] + 'backup.xml'), xmlData, 'utf8');
+
     // Replace occurrences within the <prosody> tag
     var updatedXmlString = xmlData.replace(prosodyRegex, function(match, startTag, content, endTag) {
         // Replace words with their IPA pronunciations
