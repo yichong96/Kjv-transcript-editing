@@ -1,5 +1,5 @@
 const fs = require('fs');
-å
+
 const path = require('path');
 
 // Function to parse the CSV file into a JSON object
